@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types';
 const CategoryCard = ({card}) => {
     const {logo,category_name,availability} = card;
-    console.log(card);
   return (
     <div>
       <div className="card bg-slate-100">
@@ -13,5 +13,7 @@ const CategoryCard = ({card}) => {
     </div>
   );
 };
-
+CategoryCard.propTypes ={
+    card:PropTypes.object.isRequired
+}
 export default CategoryCard;
